@@ -170,10 +170,25 @@ h5 {
     color: rgb(0, 0, 0) !important;
     margin-right: 15px;
     font-size: 1.1rem;
-    
+    font-weight: 500;
 }
 
 .nav-link-footer:hover {
     color: #007bff !important;
     text-decoration: none;
+}
+.icon {
+    font-size: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.icon.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.icon:hover{
+    transform: scale(1.2);
 }
